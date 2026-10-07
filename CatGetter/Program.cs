@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 using var client = new HttpClient();
-client.DefaultRequestHeaders.Add("x-api-key", "live_d1P51nodlXOcpOcurizLfJyRZ56feNEWAVFGwlY5ei5b8Ug7kp2kFURcWlWHUwH7");
+client.DefaultRequestHeaders.Add("x-api-key", "YOUR API KEY");
 
 var response = await client.GetAsync("https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng");
 var body = await response.Content.ReadAsStringAsync();
